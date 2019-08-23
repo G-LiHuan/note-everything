@@ -1,0 +1,1 @@
+mac npm 全局安装包路径 `/usr/local/lib/node_modules`
