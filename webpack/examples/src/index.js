@@ -1,2 +1,1 @@
-import './styles/index.css';
-console.log('webpack examples');
+console.log("");

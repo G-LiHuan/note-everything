@@ -4,6 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
+const eslintConfig = require('./.eslintrc.js');
 
 const indexStyle = new ExtractTextPlugin('styles/index.css');
 const loginStyle = new ExtractTextPlugin('styles/login.css');
@@ -34,6 +35,12 @@ module.exports = {
       //     loader: 'style-loader'
       //   },
       // ]
+    }, {
+      test: /\.js$/,
+      use: [
+        'babel-loader',
+        'eslint-loader',
+      ]
     }],
   },
   plugins: [
