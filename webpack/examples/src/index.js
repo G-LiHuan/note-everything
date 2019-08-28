@@ -10,3 +10,7 @@ console.log(aaa.b);
 if (aaa.b === 1) {
   aaa.b = 2;
 }
+
+if (module.hot) {
+  module.hot.accept();
+}

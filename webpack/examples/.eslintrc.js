@@ -31,5 +31,6 @@ module.exports = {
     'no-shadow': 'error',
     'no-undef': 'error',
     'no-use-before-define': 'error',
+    'import/no-extraneous-dependencies': ['error', { "devDependencies": true, "optionalDependencies": false, "peerDependencies": false }]
   },
 };
