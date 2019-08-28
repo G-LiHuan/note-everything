@@ -1,2 +1,12 @@
+import './styles/index.css';
+
+const aaa = {
+  b: 1,
+};
+
 // eslint-disable-next-line no-console
-console.log(1 === 2);
+console.log(aaa.b);
+
+if (aaa.b === 1) {
+  aaa.b = 2;
+}

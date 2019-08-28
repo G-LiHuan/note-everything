@@ -1,13 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const {
-  CleanWebpackPlugin
+  CleanWebpackPlugin,
 } = require('clean-webpack-plugin');
-const eslintConfig = require('./.eslintrc.js');
+// const eslintConfig = require('./.eslintrc.js');
 
 const indexStyle = new ExtractTextPlugin('styles/index.css');
-const loginStyle = new ExtractTextPlugin('styles/login.css');
+// const loginStyle = new ExtractTextPlugin('styles/login.css');
 
 module.exports = {
   entry: {
@@ -22,7 +22,7 @@ module.exports = {
     rules: [{
       test: /\.css$/,
       use: indexStyle.extract({
-        use: 'css-loader'
+        use: 'css-loader',
       }),
       // use: [
       //   'style-loader',
@@ -40,7 +40,7 @@ module.exports = {
       use: [
         'babel-loader',
         'eslint-loader',
-      ]
+      ],
     }],
   },
   plugins: [
@@ -65,5 +65,5 @@ module.exports = {
     }),
     indexStyle,
   ],
-  mode: 'development'
+  mode: 'development',
 };

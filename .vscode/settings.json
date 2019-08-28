@@ -1,5 +1,5 @@
 {
   "eslint.workingDirectories": [
-    "./../webpack/examples/"
+    "webpack/examples"
   ]
 }

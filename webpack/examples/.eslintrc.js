@@ -14,7 +14,22 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2018,
+    ecmaFeatures: {
+      modules: true,
+    }
   },
   rules: {
+    'no-console': 'error',
+    'dot-location': ['error', 'property'],
+    'dot-notation': 'error',
+    'curly': ['error', 'all'],
+    'default-case': 'error',
+    'dot-location': 'error',
+    'eqeqeq': 'error',
+    'no-else-return': 'error',
+    'no-floating-decimal': 'error',
+    'no-shadow': 'error',
+    'no-undef': 'error',
+    'no-use-before-define': 'error',
   },
 };
