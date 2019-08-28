@@ -1,4 +1,7 @@
-/node_modules/
+node_modules
+
 /webpack/examples/node_modules/
+
 /webpack/examples/dist/
+
 /webpack/examples/yarn.lock
