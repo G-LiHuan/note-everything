@@ -14,3 +14,14 @@
 ~/.bashrc
 ~~~
 
+2： Mac OS 定时任务
+
+~~~shell
+sudo crontab -u username -e
+~~~
+编辑crontab任务
+~~~shell
+sudo crontab -u username -l
+~~~
+查看当前运行的定时任务
+
